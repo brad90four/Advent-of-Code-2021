@@ -1,4 +1,11 @@
-with open("./day1_part1_input.txt") as f:
+import os
+
+file_path = __file__
+_dir = "\\".join(file_path.split("\\")[0:-1])
+print(f"{_dir = }")
+os.chdir(_dir)
+
+with open("./day1_part1_input2.txt") as f:
     input_list = f.readlines()
 
 
